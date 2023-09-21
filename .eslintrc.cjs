@@ -8,7 +8,7 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'react'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -26,7 +26,7 @@ module.exports = {
     "no-var": "error",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "react/react-in-jsx-scope": "error",
+    "react/react-in-jsx-scope": "off",
     "react/no-unused-state": "warn",
     "react/no-deprecated": "warn",
     "react/jsx-no-duplicate-props": "error",
