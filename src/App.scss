@@ -1,0 +1,59 @@
+h1, h2, h3 {
+  color: var(--dark-grayish-blue);
+}
+
+h2 {
+  font-size: clamp(2rem, 2vw, 3rem);
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  transition: .3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  &.ios {
+    background-color: var(--strong-cyan);
+    margin-bottom: 1rem;
+  }
+
+  &.mac {
+    background-color: var(--light-blue);
+  }
+}
+
+section {
+  padding-inline: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  button {
+    display: inline-block;
+    width: unset;
+
+    &.ios {
+      margin-right: 1rem;
+    }
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  section {
+    padding-inline: 0rem;
+  }
+}

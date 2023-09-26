@@ -1,5 +1,6 @@
 import "./App.scss";
-import HeroSection from "./components/HeroSection/HeroSection";
+import HeroSection from "./components/sections/HeroSection/HeroSection";
+import KeepTrackSection from "./components/sections/KeepTrackSection/KeepTrackSection";
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <main>
         <HeroSection></HeroSection>
+        <KeepTrackSection></KeepTrackSection>
       </main>
       <footer>
         <p className="attribution">
