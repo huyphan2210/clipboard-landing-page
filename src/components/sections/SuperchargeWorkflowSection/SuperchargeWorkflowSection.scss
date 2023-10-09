@@ -1,0 +1,26 @@
+.supercharge-workflow-section {
+  text-align: center;
+  &__content {
+    margin-top: 4rem;
+    &__features {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .supercharge-workflow-section {
+    &__content__features {
+      grid-template-columns: repeat(3, calc(100% / 3));
+      padding-inline: clamp(3rem, 6vw, 8rem);
+
+      &__item {
+        img {
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+}

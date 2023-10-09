@@ -10,12 +10,16 @@ const HeroSection: FC = () => {
       <hgroup className="hero-section_header">
         <h1>A history of everything you copy</h1>
         <p>
-          Clipboard allows you to track and organize everything you 
-          copy. Instantly access your clipboard on all your devices.
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your clipboard on all your devices.
         </p>
       </hgroup>
-      <button className="hero-section_button ios" type="button">Download for iOS</button>
-      <button className="hero-section_button mac" type="button">Download for Mac</button>
+      <button className="hero-section_button ios" type="button">
+        Download for iOS
+      </button>
+      <button className="hero-section_button mac" type="button">
+        Download for Mac
+      </button>
     </section>
   );
 };

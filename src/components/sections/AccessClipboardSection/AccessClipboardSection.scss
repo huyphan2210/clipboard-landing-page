@@ -1,0 +1,10 @@
+.access-clipboard-section {
+  text-align: center;
+
+  &__content {
+    margin-top: 4rem;
+    img {
+      max-width: 100%;
+    }
+  }
+}
