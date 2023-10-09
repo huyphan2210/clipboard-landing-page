@@ -1,0 +1,21 @@
+.hero-section {
+  text-align: center;
+
+  img {
+    max-width: calc(100% - 4rem);
+  }
+
+  &_header {
+    margin-block: clamp(2rem, 6vh, 4rem);
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 4rem);
+      margin-block: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section {
+  }
+}

@@ -1,0 +1,44 @@
+.keep-track-section {
+  text-align: center;
+
+  &__content {
+    margin-top: 4rem;
+
+    img {
+      width: 100%;
+    }
+
+    &__features {
+      &__item {
+        h3 {
+          font-size: clamp(1.5rem, 2vw, 2rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .keep-track-section {
+    &__content {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+
+      &__features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        gap: 2rem;
+        padding-inline: clamp(3rem, 6vw, 8rem);
+
+        &__item {
+          h3 {
+            margin-block: 0;
+          }
+        }
+      }
+    }
+  }
+}
